@@ -62,7 +62,10 @@ document.getElementById('orderForm').addEventListener('submit', async function (
   const price = priceTable[version][storage];
 
   try {
-    const res = await fetch('http://localhost:3000/api/preorder', {
+   const API_BASE = 'https://webiphone-backend-api.onrender.com';
+
+const res = await fetch(`${API_BASE}/api/preorder`, {
+
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({

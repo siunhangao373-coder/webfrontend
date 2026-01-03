@@ -1,5 +1,8 @@
 async function loadOrders() {
-const res = await fetch('/api/preorders');
+const API_BASE = 'https://webiphone-backend-api.onrender.com';
+
+const res = await fetch(`${API_BASE}/api/preorders`);
+
 const orders = await res.json();
 
 
