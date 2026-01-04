@@ -115,10 +115,12 @@ body {
 }
 
 .hero img {
-  width: 600px;
+  width: 100%;
+  max-width: 600px;
+  height: auto;
   margin-top: 20px;
-  animation: fadeInRight 1s ease;
 }
+
 
 /* ================= SECTION ================= */
 .section {
@@ -351,4 +353,12 @@ body {
   .section {
     padding: 50px 24px;
   }
+}
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.pricing table {
+  min-width: 600px;
 }
