@@ -119,6 +119,7 @@ body {
   max-width: 600px;
   height: auto;
   margin-top: 20px;
+  animation: fadeInRight 1s ease;
 }
 
 
