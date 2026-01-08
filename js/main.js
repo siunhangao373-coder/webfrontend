@@ -54,8 +54,8 @@ document.getElementById('orderForm').addEventListener('submit', async function (
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
   if (name.length < 3) return showError("Họ tên phải ít nhất 3 ký tự !");
-  if (!phoneRegex.test(phone)) return showError("Số điện thoại không hợp lệ!");
-  if (!emailRegex.test(email)) return showError("Email không hợp lệ!");
+  if (!phoneRegex.test(phone)) return showError("Số điện thoại phải có 10 số và bắt đầu bằng 0 !");
+  if (!emailRegex.test(email)) return showError("Email không đúng định dạng!");
   if (!address) return showError("Vui lòng nhập địa chỉ!");
   if (!version || !storage) return showError("Vui lòng chọn phiên bản và dung lượng!");
 
